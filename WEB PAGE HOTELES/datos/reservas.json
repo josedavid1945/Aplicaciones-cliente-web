@@ -1,0 +1,14 @@
+[
+  {
+    "id_reserva": "res_20250615001",
+    "id_habitacion_reservada": "h205",
+    "id_cliente": "cli_1748293748",
+    "fecha_llegada": "2025-05-28",  
+    "fecha_salida": "2025-05-31",   
+    "numero_adultos": 2,
+    "numero_ninos": 1,
+    "estado_reserva": "confirmada",
+    "fecha_creacion_reserva": "2025-05-29T12:00:00Z",
+    "notas_adicionales": "Solicita cuna para bebé."
+  }
+]

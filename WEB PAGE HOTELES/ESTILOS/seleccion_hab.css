@@ -1,0 +1,145 @@
+
+.contenedor-seleccion {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex-grow: 1;
+    color: var(--text-dark)
+}
+.contenedor-seleccion h1 {
+    color: var(--primary-color)
+}
+
+.info-reserva-actual {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #d0d0d0;
+}
+
+.info-reserva-actual p {
+    margin: 5px 0;
+}
+
+.info-reserva-actual strong {
+    color: var(--primary-color);
+}
+
+.habitacion-disponible-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habitacion-disponible-item img {
+    max-width: 250px;
+    min-width: 150px;
+    flex-basis: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.habitacion-disponible-item .detalles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.habitacion-disponible-item h3 {
+    margin-top: 0;
+    color: var(--primary-color); 
+}
+
+.habitacion-disponible-item .precio {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #007bff; 
+    margin: 10px 0;
+}
+
+.habitacion-disponible-item .amenidades-lista {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.habitacion-disponible-item .amenidades-lista li {
+    margin-bottom: 4px;
+    display: inline-block;
+    margin-right: 8px;
+    background-color: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.habitacion-disponible-item .btn-seleccionar-habitacion {
+    padding: 10px 20px;
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.habitacion-disponible-item .btn-seleccionar-habitacion:hover {
+    background-color: #218838;
+}
+
+.habitacion-disponible-item .imagen-habitacion-wrapper img {
+    transition: transform 0.4s ease-in-out; 
+}
+.habitacion-disponible-item .imagen-habitacion-wrapper:hover img {
+    transform: scale(1.15); /* Agranda la imagen al 115% */
+}
+#lista-habitaciones-disponibles .mensaje-informativo { 
+    font-style: italic;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+.simple-header-footer {
+    background-color: var(--primary-color); 
+    color: var(--text-dark); 
+    padding: 15px 0;
+    text-align: center;
+}
+
+.simple-header-footer .logo img {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+.pie-pagina1 {
+    background-color: var(--primary-color);
+    color: var(--text-light); 
+    padding: 40px 30px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px; 
+}

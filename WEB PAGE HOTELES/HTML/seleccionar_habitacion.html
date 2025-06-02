@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Habitación - Hotel Toquilla House</title>
+    <link rel="stylesheet" href="/ESTILOS/estilos.css">
+    <link rel="stylesheet" href="/ESTILOS/seleccion_hab.css">
+    <link rel="shortcut icon" href="../IMAGENES/Lampshade-Hat-PNG-High-Quality-Image.png" type="image/x-icon">
+</head>
+<body > 
+    <header>
+        <div class="encabezado-informativo">
+            <div class="elementos">
+                <p>Contactenos: +NUMERO RANDOM</p>
+                <p>INFO@hoteltoquillahouse.com</p>
+            </div>
+            <div class="elementos">
+                <label for="idioma-select" class="form-label"><strong>IDIOMA:</strong></label>
+                <select class="form-select" name="idioma" id="idioma-select">
+                    <option value="en">Inglés</option>
+                    <option value="es" selected>Español</option>
+                </select>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="/IMAGENES/Lampshade-Hat-PNG-High-Quality-Image.png" alt="Logo Toquilla House">
+                <h2 class="nombre-empresa">TOQUILLA HOUSE</h2>
+            </div>
+            <nav class="elementos-nav-bar">
+                <a href="#">Habitaciones y Suites</a>
+                <a href="#">Gastronomía</a>
+                <a href="#">Eventos</a>
+                <a href="#">Guía</a>
+                <a href="#">Tour Virtual</a>
+                <a href="#">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <main class="contenedor-seleccion">
+        <h1>Habitaciones Disponibles</h1>
+        
+        <div id="info-reserva-actual" class="info-reserva-actual">
+            <p><strong>Buscando para:</strong></p>
+            <p><strong>Entrada:</strong> <span id="info-fecha-entrada">--</span> | <strong>Salida:</strong> <span id="info-fecha-salida">--</span></p>
+            <p><strong>Huéspedes:</strong> <span id="info-adultos">--</span> Adultos, <span id="info-ninos">--</span> Niños</p>
+        </div>
+
+        <div id="lista-habitaciones-disponibles">
+            <p class="mensaje-informativo">Buscando habitaciones disponibles para tus fechas...</p>
+            </div>
+    </main>
+    </div>
+
+    <footer >
+        <div class="pie-pagina1">
+            <div class="elemento-footer">
+                <h3>Sobre Nosotros</h3>
+                <p>
+                    Lore1m ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt a possimus aliquam fuga, ea assumenda! Rem laborum fugiat esse repellat, ea exercitationem soluta nisi a corporis alias numquam. Corporis.
+                </p>
+            </div>
+            <div class="elemento-footer">
+                <h3>Contacto Rápido</h3>
+                <p>
+                    Dirección3: Calle Ficticia 123, Manta, Ecuador.<br>
+                    Teléfono: +NUMERO RANDOM<br>
+                    Email: INFO@hoteltoquillahouse.com
+                </p>
+            </div>
+            <div class="elemento-footer">
+                <h3>Servicios Adicionales</h3> <p>
+                    Lorem ip4sum dolor sit amet consectetur adipisicing elit. Quos deserunt a possimus aliquam fuga, ea assumenda! Rem laborum fugiat esse repellat, ea exercitationem soluta nisi a corporis alias numquam. Corporis.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Javascript/logica_seleccion.js"></script>
+</body>
+</html>

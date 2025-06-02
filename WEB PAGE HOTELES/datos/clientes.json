@@ -1,0 +1,20 @@
+[
+  {
+    "id_cliente": "cli_1748293748",
+    "nombres": "Ana",
+    "apellidos": "Suárez",
+    "email": "ana.suarez@email.com",
+    "ciudad": "Manta",
+    "telefono": "0987654321",
+    "fecha_registro": "2025-05-29T10:30:00Z"
+  },
+  {
+    "id_cliente": "cli_1748293999",
+    "nombres": "Carlos",
+    "apellidos": "López",
+    "email": "c.lopez@email.net",
+    "ciudad": "Quito",
+    "telefono": "",
+    "fecha_registro": "2025-05-30T11:00:00Z"
+  }
+]

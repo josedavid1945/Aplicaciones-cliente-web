@@ -1,0 +1,385 @@
+/* --- Variables CSS --- */
+:root {
+    --primary-color: #474876;
+    --secondary-color: rgb(177, 206, 231); 
+    --text-light: aliceblue;
+    --text-dark: #333; 
+    --link-color: #474876;
+    --link-hover-color: black;
+    --button-bg-color: #474876;
+    --button-text-color: aliceblue; /* Cambiado de rgb(75, 90, 134) por contraste */
+    --button-hover-bg-color: #9495aa;
+    --button-hover-text-color: antiquewhite;
+    --fixed-header-height: 50px; /* Altura del encabezado informativo fijo */
+}
+
+
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif; 
+    color: var(--text-dark);
+    background-image: url(/IMAGENES/Manta-Beach.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto; 
+    padding-top: var(--fixed-header-height); /
+}
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.35); 
+    z-index: -1; 
+}
+
+
+h1 {
+    color: var(--text-light); 
+    font-size: 70px; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.encabezado-informativo {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--fixed-header-height);
+    z-index: 60; 
+}
+
+.elementos { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; 
+}
+
+
+.nav-bar {
+    background-color: transparent; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 30px; 
+    margin-top: 20px; 
+    position: relative; 
+    z-index: 3; 
+    gap: 50px;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    gap: 5px; 
+}
+
+.logo  img {
+    height: 50px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.logo  .nombre-empresa { 
+    font-size: 1.2em;
+    color: var(--primary-color); 
+}
+
+.elementos-nav-bar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px; 
+}
+
+.elementos-nav-bar a { 
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px; 
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    display: inline-block; 
+}
+.elementos-nav-bar button { 
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px; 
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    display: inline-block; 
+    border: none;
+    color: var(--button-bg-color);
+    background-color: #33333300;
+}
+.elementos-nav-bar button:hover {
+    color: var(--link-hover-color);
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); 
+}
+.elementos-nav-bar a:hover {
+    color: var(--link-hover-color);
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); 
+}
+
+
+.container-principal {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr; 
+    gap: 30px; 
+    padding: 20px 80px; 
+    margin-left: 150px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 8px;
+    z-index: 10;
+    
+}
+
+.contenedor-reserva form {
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    gap: 20px; 
+    padding: 20px;
+    text-align: center; 
+    background-color: rgb(240, 248, 255); 
+    border-radius: 8px;
+    position: relative;
+    left: -400px;
+}
+
+.contenedor-elemento-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+.contenedor-elemento-reserva label { 
+    font-weight: bold;
+    font-size: 1.1em; 
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.contenedor-elemento-reserva input[type="date"],
+.contenedor-elemento-reserva input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contenedor-elemento-reserva button {
+    padding: 12px 30px; 
+    border-radius: 8px; 
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    font-size: 20px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px; 
+}
+
+.contenedor-elemento-reserva button:hover {
+    background-color: var(--button-hover-bg-color);
+    color: var(--button-hover-text-color);
+    transform: scale(1.03); 
+}
+
+
+.pie-pagina {
+    background-color: var(--primary-color);
+    color: var(--text-light); 
+    padding: 40px 30px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10%; 
+}
+
+.pie-pagina .elemento-footer h3 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: var(--secondary-color);
+}
+
+.pie-pagina .elemento-footer p {
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+.pie-pagina button{
+    background-color: #33333300;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pie-pagina .elemento-footer img {
+    height: 100px;
+    width: 100px;
+    margin: none;
+    transition: 0.3s;
+
+}
+.pie-pagina .elemento-footer img:hover {
+   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+   cursor: pointer;
+}
+
+.pie-pagina .elemento-footer-registro button{
+    padding: 12px 30px;
+    border-radius: 8px; 
+    background-color: #9495aa;
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    font-size: 20px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px; 
+    
+}
+
+.pie-pagina .elemento-footer-registro button:hover{
+    background-color: var(--button-hover-bg-color);
+    color: var(--button-hover-text-color);
+    transform: scale(1.05); 
+}
+.pie-pagina .elemento-footer-registro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+dialog#modal::backdrop { 
+    background-color: rgba(3, 0, 0, 0.55); 
+}
+
+dialog#modal{
+  border-radius: 15px;
+  border: none;
+  margin: auto;
+}
+dialog#modal .modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 40px;
+}
+
+dialog#modal .modal h1{
+  color: var(--link-color);
+}
+
+dialog#modal .modal #btn-cerrar-modal{
+  background-color: var(--button-bg-color);
+  padding: 15px 30px;
+}
+
+dialog#ctn-cover-video::backdrop{
+    background-color:rgba(3, 0, 0, 0.55) ;
+}
+dialog#ctn-cover-video{
+  border-radius: 15px;
+  border: none;
+  margin: auto;
+}
+
+
+.input-registro{
+    display: grid;
+    grid-template-columns:  auto auto;
+    gap: 15px;
+    align-items: center;
+}
+.card-input{
+    padding: 15px;
+    background-color: #9495aa90;
+    width: 100%;
+    border-radius:15px ;
+}
+.card-input3{
+    grid-column: 1/ 3 ;
+    padding: 15px;
+    background-color: #9495aa79;
+    width: 100%;
+    border-radius: 15px;
+
+    
+}
+.card-input3  input[type="email"],
+.card-input3  input[type="text"],
+.card-input3  input[type="number"]{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+    
+}
+
+.card-input  input[type="email"],
+.card-input  input[type="text"]{
+    padding: 10px;
+    border: 1px solid #fefefe;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.btn-cerrar-modal{
+    padding: 12px 30px;
+    border-radius: 8px; 
+    background-color: #5257bc;
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    font-size: 20px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px; 
+}
+
+.btn-cerrar-modal:hover{
+    background-color: var(--button-hover-bg-color);
+    color: var(--button-hover-text-color);
+    transform: scale(1.05); 
+}

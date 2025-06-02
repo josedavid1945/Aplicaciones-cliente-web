@@ -1,0 +1,26 @@
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.container-secundario {
+    padding: 20px 80px; 
+    margin-left: 150px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-color: rgba(255, 255, 255, 0.359); 
+    border-radius: 8px;
+    z-index: 10;
+    
+}
+
+.elementos-informativos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    z-index: 15;
+}
+h1{
+    color: var(--primary-color);
+}

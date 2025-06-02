@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Hotel Toquilla House</title>
+    <link rel="stylesheet" href="/ESTILOS/admin_estilos.css">
+</head>
+<body>
+    <div id="login-container" class="container">
+        <h2>Acceso Administrador</h2>
+        <form id="login-form">
+            <div>
+                <label for="admin-username">Usuario:</label>
+                <input type="text" id="admin-username" name="admin-username" required>
+            </div>
+            <div>
+                <label for="admin-password">Contraseña:</label>
+                <input type="password" id="admin-password" name="admin-password" required>
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+        <p id="login-error" class="error-message" style="display: none;">Usuario o contraseña incorrectos.</p>
+    </div>
+
+    <div id="admin-panel" class="container" style="display: none;">
+        <header class="admin-header">
+            <h1>Panel de Administración Hotel Toquilla House</h1>
+            <button id="logout-button">Cerrar Sesión</button>
+        </header>
+        
+        <nav class="admin-nav">
+            <ul>
+                <li><button data-section="habitaciones">Gestionar Habitaciones</button></li>
+                <li><button data-section="reservas">Gestionar Reservas</button></li>
+                <li><button data-section="clientes">Ver Clientes Registrados</button></li>
+            </ul>
+        </nav>
+        
+        <main id="admin-content-area">
+            <section id="section-bienvenida" class="admin-section">
+                <h2>Bienvenido/a</h2>
+                <p>Selecciona una opción del menú para empezar a gestionar el hotel.</p>
+            </section>
+
+            <section id="section-habitaciones" class="admin-section" style="display: none;">
+                <h2>Gestión de Habitaciones</h2>
+                <p>Contenido de gestión de habitaciones...</p> 
+            </section>
+
+            <section id="section-reservas" class="admin-section" style="display: none;">
+                <h2>Gestión de Reservas</h2>
+                <p>Contenido de gestión de reservas...</p>
+            </section>
+
+            <section id="section-clientes" class="admin-section" style="display: none;">
+                <h2>Clientes Registrados</h2>
+                <p>Contenido de visualización de clientes...</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="/Javascript/admin_logica.js"></script>
+</body>
+</html>

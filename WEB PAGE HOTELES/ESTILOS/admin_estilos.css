@@ -1,0 +1,197 @@
+
+:root {
+    --admin-primary-color: #2c3e50; /* Azul oscuro/grisáceo */
+    --admin-secondary-color: #3498db; /* Azul más brillante para acentos */
+    --admin-bg-color: #ecf0f1;       /* Gris claro para el fondo general */
+    --admin-widget-bg-color: #ffffff; /* Blanco para contenedores/widgets */
+    --admin-text-color: #333333;
+    --admin-light-text-color: #ffffff;
+    --admin-border-color: #bdc3c7;   /* Gris para bordes */
+    --admin-error-color: #e74c3c;    /* Rojo para errores */
+    --admin-success-color: #2ecc71;  /* Verde para éxito */
+    --admin-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--admin-font-family);
+    background-color: var(--admin-bg-color);
+    color: var(--admin-text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: var(--admin-widget-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: var(--admin-primary-color);
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--admin-secondary-color);
+    color: var(--admin-light-text-color);
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9; /* Un azul un poco más oscuro al pasar el mouse */
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--admin-border-color);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+
+#login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login-form div {
+    margin-bottom: 15px;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+}
+
+.error-message {
+    color: var(--admin-error-color);
+    background-color: #fdd; /* Fondo rosa claro para errores */
+    border: 1px solid var(--admin-error-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--admin-primary-color);
+    margin-bottom: 20px;
+}
+
+.admin-header h1 {
+    margin-bottom: 0; /* Quitar margen inferior del h1 del header */
+    font-size: 1.8em;
+}
+
+#logout-button {
+    background-color: var(--admin-error-color); /* Rojo para el botón de logout */
+}
+
+#logout-button:hover {
+    background-color: #c0392b; /* Rojo más oscuro */
+}
+
+.admin-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px; /* Espacio entre botones de navegación */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--admin-border-color);
+}
+
+.admin-nav button {
+    background-color: var(--admin-primary-color);
+    flex-grow: 1; /* Para que los botones ocupen el espacio disponible si son pocos */
+}
+.admin-nav button:hover {
+    background-color: var(--admin-secondary-color);
+}
+
+#admin-content-area {
+    padding: 15px;
+    background-color: #f9f9f9; /* Un fondo ligeramente diferente para el área de contenido */
+    border-radius: 5px;
+    min-height: 300px; /* Para que tenga algo de altura incluso si está vacío */
+}
+
+.admin-section h2 {
+    font-size: 1.5em;
+    border-bottom: 1px dashed var(--admin-border-color);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid var(--admin-border-color);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9ecef; /* Un gris muy claro para encabezados de tabla */
+    color: var(--admin-primary-color);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa; /* Rayado para filas pares */
+}
+
+.btn-accion {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+.btn-editar {
+    background-color: #f39c12; /* Naranja para editar */
+}
+.btn-editar:hover {
+    background-color: #e67e22;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c; /* Rojo para eliminar (ya lo usamos para logout, es consistente) */
+}
+.btn-eliminar:hover {
+    background-color: #c0392b;
+}

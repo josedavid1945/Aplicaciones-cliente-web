@@ -1,0 +1,35 @@
+[
+  {
+    "id_habitacion": "h101",
+    "numero_habitacion": "101",
+    "tipo_habitacion": "Sencilla",
+    "descripcion": "Acogedora habitación sencilla con vista al jardín. Ideal para viajeros solos.",
+    "precio_noche": 55,
+    "capacidad_maxima": 1,
+    "amenidades": ["WiFi", "TV Pantalla Plana", "Escritorio", "Baño privado"],
+    "disponible_actualmente": true,
+    "url_imagen_principal": "IMAGENES/habitaciones/217231487.jpg"
+  },
+  {
+    "id_habitacion": "h205",
+    "numero_habitacion": "205",
+    "tipo_habitacion": "Doble",
+    "descripcion": "Espaciosa habitación doble con dos camas individuales o una cama matrimonial, balcón con vista parcial al mar.",
+    "precio_noche": 85,
+    "capacidad_maxima": 2,
+    "amenidades": ["WiFi", "TV Pantalla Plana", "Aire Acondicionado", "Minibar", "Balcón", "Baño privado"],
+    "disponible_actualmente": true,
+    "url_imagen_principal": "IMAGENES/habitaciones/217231487.jpg"
+  },
+  {
+    "id_habitacion": "h301",
+    "numero_habitacion": "301",
+    "tipo_habitacion": "Suite",
+    "descripcion": "Lujosa suite con cama King size, sala de estar separada, jacuzzi y amplias vistas al océano.",
+    "precio_noche": 150,
+    "capacidad_maxima": 3,
+    "amenidades": ["WiFi Premium", "Smart TV 55\"", "Aire Acondicionado Central", "Minibar completo", "Jacuzzi", "Sala de estar", "Terraza privada", "Baño amplio"],
+    "disponible_actualmente": true,
+    "url_imagen_principal": "IMAGENES/habitaciones/217231487.jpg"
+  }
+]
